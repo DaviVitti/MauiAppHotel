@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.sobre"
+             Title="sobre"
+             NavigationPage.HasNavigationBar="False" 
+             BackgroundImageSource="praia.jpg">
+    <VerticalStackLayout VerticalOptions="CenterAndExpand"
+                         Padding="10"
+                         Spacing="10">
+
+        <Label Text="Sobre"
+               FontFamily="Montserrat"
+               FontSize="40"
+               TextColor="FloralWhite" />
+        <Frame Padding="10" BackgroundColor="#59FFFFFF">
+            <VerticalStackLayout>
+                
+                    <Label Grid.Row="0" Grid.Column="0"
+                           Text="Desenvolvido por: Davi Vitti" 
+                           FontFamily="Montserrat"
+                           FontSize="30"/>
+                    <Label Grid.Row="0" Grid.Column="0"
+        Text="18/Maio/2025" 
+        FontFamily="Montserrat"
+        FontSize="20"/>
+               
+                <Button Text="Início" Margin="10" 
+        HorizontalOptions="Fill"
+        WidthRequest="320"/>
+
+            </VerticalStackLayout>
+        </Frame>
+
+    </VerticalStackLayout>
+</ContentPage>
