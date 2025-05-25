@@ -3,17 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppHotel.Views.HospedagemContratada"
              NavigationPage.HasNavigationBar="False"
+             BackgroundImageSource="praia.jpg"
              BackgroundColor="{StaticResource Gray100}">
 
-    <VerticalStackLayout VerticalOptions="CenterAndExpand">
+    <VerticalStackLayout VerticalOptions="CenterAndExpand"
+                         Padding="10"
+                         Spacing="10">
 
-        <Label Text="Suíte Super Luxo"
-               TextColor="{StaticResource Primary}"
-               FontFamily="Kalam"
-               FontSize="50"
+        <Label Text="Suíte família"
+               FontFamily="Montserrat"
+               FontSize="40"
+               TextColor="FloralWhite"
                HorizontalTextAlignment="Center"/>
 
-        <Frame Margin="10">
+        <Frame Margin="10"
+               BackgroundColor="#59FFFFFF">
             <StackLayout  Orientation="Horizontal" >
                 <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                     <Label Text="Adultos: " />
@@ -29,7 +33,8 @@
             </StackLayout>
         </Frame>
 
-        <Frame Margin="10">
+        <Frame Margin="10"
+               BackgroundColor="#59FFFFFF">
             <Grid ColumnDefinitions="*, *, *"
                   RowDefinitions="Auto, Auto">
                 <Label Grid.Row="0" Grid.Column="0" Text="Check-in:" />
@@ -42,7 +47,8 @@
             </Grid>
         </Frame>
 
-        <Frame Margin="10">
+        <Frame Margin="10"
+               BackgroundColor="#59FFFFFF">
             <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                 <Label Text="Valor Total: " />
                 <Label Text="R$ 750,00" />
