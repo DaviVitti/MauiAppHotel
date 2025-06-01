@@ -62,7 +62,8 @@
                                TextColor="{StaticResource Primary}"/>
 
                         <Picker x:Name="pck_quarto"
-                                Title="Selecione sua Acomodação" />
+                                Title="Selecione sua Acomodação" 
+                                ItemDisplayBinding="{Binding Descricao}"/>
                     </VerticalStackLayout>
                 </Frame>
 
@@ -98,7 +99,7 @@
                 <Button Text="Sobre" Margin="10" 
                         HorizontalOptions="Fill"
                         WidthRequest="320"
-                        Clicked="IrParaSobre"/>
+                            />
 
             </VerticalStackLayout>
         </Frame>
